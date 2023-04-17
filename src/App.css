@@ -1,0 +1,8 @@
+#root {
+  min-width: 100%;
+  height: auto;
+}
+.App {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}

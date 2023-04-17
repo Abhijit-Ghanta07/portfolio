@@ -1,0 +1,43 @@
+:root {
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --hover-color: purple;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: inherit;
+}
+a:hover {
+}
+
+body {
+}
+
+h1 {
+}
+
+button {
+}
+button:hover {
+}
+button:focus,
+button:focus-visible {
+}
+
+@media (prefers-color-scheme: light) {
+}
