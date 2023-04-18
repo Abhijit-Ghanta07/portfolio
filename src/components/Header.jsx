@@ -1,10 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
+import { navbarLinks } from "../constants/constants.js";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 function Header() {
   const [Color, setColor] = useState("");
   const [phoneNav, setPhoneNav] = useState(false);
-  const navLink = ["home", "projects", "aboutme", "contract"];
+  // const roots = getComputedStyle(document.documentElement).getPropertyValue(
+  //   "--hover-color"
+  // );
+
   function scrollTop() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 20 && !phoneNav) {
@@ -17,7 +21,7 @@ function Header() {
   useEffect(() => {
     scrollTop();
   }, [Color]);
-
+  // return header html
   return (
     <div className="header-container" style={{ backgroundColor: Color }}>
       <div className="header-wrapper">
@@ -26,6 +30,7 @@ function Header() {
             abhijit <span>Dev</span>
           </h2>
         </div>
+        {/* mobile navbar */}
         <div className="navbar">
           <div className="ham">
             <GiHamburgerMenu onClick={() => setPhoneNav(!phoneNav)} />
@@ -34,17 +39,17 @@ function Header() {
             <>
               <ul className="phone-navlist">
                 <RxCross1 onClick={() => setPhoneNav(!phoneNav)} />
-                {navLink.map((linkItem, index) => {
+                {navbarLinks.map((linkItem, index) => {
                   return (
                     <>
-                      <li key={index}>
+                      <li key={linkItem.id}>
                         <a
-                          href={`#${linkItem}`}
+                          href={`#${linkItem.reLink}`}
                           onClick={() => {
                             setPhoneNav(!phoneNav);
                           }}
                         >
-                          {linkItem}
+                          {linkItem.linkName}
                         </a>
                       </li>
                     </>
@@ -53,13 +58,16 @@ function Header() {
               </ul>
             </>
           )}
-
+          {/* hearder navbar */}
           <ul className="navlist">
-            {navLink.map((linkItem, index) => {
+            {navbarLinks.map((linkItem, index) => {
               return (
                 <>
-                  <li key={index}>
-                    <a href={`#${linkItem}`}>{linkItem}</a>
+                  <li key={linkItem.id}>
+                    <a href={`#${linkItem.reLink}`}>
+                      {<linkItem.icon />}
+                      {linkItem.linkName}
+                    </a>
                   </li>
                 </>
               );

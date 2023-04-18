@@ -3,13 +3,14 @@
   font-family: "Poppins", sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #2c3333;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --hover-color: purple;
+  --hover-color: #126565;
+  --background-color: #0a4d68;
 }
 * {
   margin: 0;

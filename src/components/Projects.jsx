@@ -5,11 +5,14 @@ function Projects() {
   let h2Animation = { x: 0, opacity: 1 };
   return (
     <div className="projects-container" id="projects">
+      {/* framer motion div */}
       <motion.div style={{ scaleX: scrollYProgress }} className="progress" />
       <div className="projects-wrapper">
         <motion.h2 initial="hidden" whileInView="visible">
           projects
         </motion.h2>
+
+        {/* projects */}
         <section className="f-project">
           <div className="project-info">
             <motion.h2
@@ -32,7 +35,9 @@ function Projects() {
           />
         </section>
         <section className="s-project">
-          <img
+          <motion.img
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.2, ease: "easeIn" }}
             src="https://1.bp.blogspot.com/-q3-yL5W0PsM/X4MfhhCraNI/AAAAAAAAAbI/t2ZfZlc8qtcQO14VKo9USVT7GSm882cmQCLcBGAsYHQ/s1280/How%2Bto%2BCreate%2Ba%2BResponsive%2B%2BPersonal%2BPortfolio%2BWebsite%2BHTML.jpg"
             alt=""
           />

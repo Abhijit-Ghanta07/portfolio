@@ -13,9 +13,9 @@ function Profile() {
     <div className="profile-container" id="aboutme" ref={profileRef} on>
       <div className="profile-wrapper">
         <div className="profile-info">
-          <h2>name</h2>
-          <p>quelifications</p>
-          <h3>skills</h3>
+          <p>name:abhijitDev</p>
+          <p>qualification:graduate in cs from vu</p>
+          <h3>skills:javascript,react.js,node.js,tailwind css</h3>
           <button>hire me</button>
         </div>
         <div className="line"></div>
