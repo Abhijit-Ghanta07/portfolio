@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --hover-color: #126565;
+  --hover-color: #048970;
   --background-color: #0a4d68;
 }
 * {
@@ -19,6 +19,9 @@
 }
 ::-webkit-scrollbar {
   display: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 a {
   color: inherit;

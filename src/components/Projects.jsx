@@ -28,15 +28,15 @@ function Projects() {
             </p>
           </div>
           <motion.img
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2, ease: "easeIn" }}
-            src="https://repository-images.githubusercontent.com/384091706/a1614500-e03f-11eb-986a-30f6f0d4f1cc"
+            src="/projects/school manage.png"
             alt=""
           />
         </section>
         <section className="s-project">
           <motion.img
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2, ease: "easeIn" }}
             src="https://1.bp.blogspot.com/-q3-yL5W0PsM/X4MfhhCraNI/AAAAAAAAAbI/t2ZfZlc8qtcQO14VKo9USVT7GSm882cmQCLcBGAsYHQ/s1280/How%2Bto%2BCreate%2Ba%2BResponsive%2B%2BPersonal%2BPortfolio%2BWebsite%2BHTML.jpg"
             alt=""

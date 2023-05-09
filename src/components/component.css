@@ -192,6 +192,7 @@
 .projects-wrapper > section img {
   width: 40%;
   height: 100%;
+  box-shadow: 0px 5px 5px #1e1d1d;
 }
 .projects-wrapper section:last-child img {
   width: 40%;
@@ -425,10 +426,8 @@
     padding-left: 2.4rem;
   }
   .projects-wrapper > section img {
-    clip-path: polygon(0 19%, 99% 0, 100% 100%, 0% 100%);
   }
   .projects-wrapper section:last-child img {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
   }
 }
 /* animations  */
